@@ -46,9 +46,10 @@ npm install
 ```
 
 Create a `.env` file:
+```bash
 VITE_SUPABASE_URL=your-supabase-url
 VITE_SUPABASE_PUBLISHABLE_KEY=your-anon-key
-
+```
 
 ```bash
 npm run dev
