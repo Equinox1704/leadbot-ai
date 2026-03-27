@@ -4,7 +4,7 @@ A production-ready AI SaaS landing page with a live GPT-4o-mini powered chatbot
 that captures and qualifies leads 24/7.
 
 ## Live Demo
-[leadbot-ai.vercel.app](https://leadbot-ai.vercel.app)
+[leadbotai-v1.vercel.app](https://leadbotai-v1.vercel.app)
 
 ## What This Is
 
