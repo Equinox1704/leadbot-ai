@@ -21,10 +21,10 @@ const ChatDemo = () => {
       isFirstRender.current = false;
       return;
     }
-    bottomRef.current?.scrollIntoView({ behavior: "smooth" });
+    bottomRef.current?.scrollIntoView({ behavior: "smooth" , block: "nearest"});
   }, [messages]);
 
-  
+
   const send = async () => {
     const text = input.trim();
     if (!text || isLoading) return;
@@ -42,11 +42,11 @@ const ChatDemo = () => {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          Authorization: `Bearer ${import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY}`,
+          "Authorization": `Bearer ${import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY}`,
+          "apikey": import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY,
         },
         body: JSON.stringify({ messages: allMessages }),
       });
-
       if (!resp.ok || !resp.body) {
         throw new Error("Stream failed");
       }
