@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security vulnerability
+    url: https://github.com/Equinox1704/leadbot-ai/security/policy
+    about: Do not report security vulnerabilities publicly. Follow SECURITY.md instead.
+  - name: Questions and setup help
+    url: https://github.com/Equinox1704/leadbot-ai/discussions
+    about: Use GitHub Discussions if enabled. Otherwise, open a focused feature request.
